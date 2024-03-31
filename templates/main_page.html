@@ -1,0 +1,12 @@
+{%extends "base.html"%}
+
+{% block title %}Home page{% endblock %}
+
+{% block body %}
+{% for admin in admins_lst %}
+    {{admin.id}}
+    {{admin.lastname}}
+    {{admin.firstname}}
+    {{admin.date_of_bitrh}}
+{% endfor %}
+{% endblock %}
